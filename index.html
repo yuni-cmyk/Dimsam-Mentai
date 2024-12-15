@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dimsum Mentai Yum Yum</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Menambahkan JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "Dimsum Mentai Yum Yum",
+        "description": "Dimsum Mentai adalah inovasi baru dalam dunia kuliner dimsum. Dengan kombinasi dimsum tradisional yang empuk dan topping mentai yang creamy dan pedas, kami hadir untuk memanjakan lidah Anda.",
+        "menu": [
+            {
+                "@type": "MenuItem",
+                "name": "Dimsum Mentai Original",
+                "description": "Dimsum dengan topping mentai original yang gurih dan lezat.",
+                "url": "https://www.example.com/order/dimsum-mentai-original",
+                "image": "https://i.pinimg.com/736x/24/85/19/24851915366b485773e53926e4e7e8cd.jpg"
+            },
+            {
+                "@type": "MenuItem",
+                "name": "Dimsum Mentai Quick Melt",
+                "description": "Dimsum dengan topping mentai quick melt yang cocok untuk pecinta keju.",
+                "url": "https://www.example.com/order/dimsum-mentai-quick-melt",
+                "image": "https://i.pinimg.com/736x/46/23/47/46234746a3d1e89c24b2122f5162d198.jpg"
+            }
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62 812-3456-7890",
+            "contactType": "Customer Service",
+            "areaServed": "ID",
+            "availableLanguage": "Indonesian"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Contoh No. 1",
+            "addressLocality": "Jakarta",
+            "addressRegion": "DKI Jakarta",
+            "postalCode": "12345",
+            "addressCountry": "ID"
+        },
+        "sameAs": [
+            "https://www.instagram.com/dimsummentaiyumyum",
+            "https://www.facebook.com/dimsummentaiyumyum"
+        ]
+    }
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Dimsum Mentai Yum Yum</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#order">Menu</a></li>
+                    <li><a href="#order-list">Hubungi Kami</a></li>
+                </ul>
+            </nav>
+            <p>Dimsum Mentai, Cita Rasa yang Menggoda!</p>
+            <a href="#order" class="btn-order">Pesan Sekarang</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Dimsum Mentai</h2>
+            <p>Dimsum Mentai adalah inovasi baru dalam dunia kuliner dimsum. Dengan kombinasi dimsum tradisional yang empuk dan topping mentai yang creamy dan pedas, kami hadir untuk memanjakan lidah Anda</p>
+            <img src="C:\Users\tri wahyuni\Downloads\dimsum-transformed (1).jpeg" alt="Dimsum Mentai" class="image"/>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container">
+            <h2>Pilih Dimsum Mentai Favoritmu</h2>
+            <div class="menu">
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/24/85/19/24851915366b485773e53926e4e7e8cd.jpg" alt="Dimsum Mentai Original" class="item-image"/>
+                    <h3>Dimsum Mentai Original</h3>
+                    <p>Dimsum dengan topping mentai original yang gurih dan lezat.</p>
+                    <button onclick="addToOrder('Dimsum Mentai Original')">Pesan Sekarang</button>
+                </div>
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/46/23/47/46234746a3d1e89c24b2122f5162d198.jpg" alt="Dimsum Mentai Qiuck Melt" class="item-image"/>
+                    <h3>Dimsum Mentai Qiuck Melt</h3>
+                    <p>Dimsum dengan topping mentai quick melt yang cocok untuk pecinta keju.</p>
+                    <button onclick="addToOrder('Dimsum Mentai Quick Melt')">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Hubungi Kami</h2>
+            <p>Untuk pemesanan atau informasi lebih lanjut, silakan hubungi kami:</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Nama" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
